@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
   },
   images: {
     remotePatterns: [
+        {
+        protocol: 'https',
+        hostname: 'nyc.cloud.appwrite.io',
+        pathname: '/v1/storage/buckets/**',
+      },
       {
         protocol: "https",
         hostname: "cdn.pixabay.com",
